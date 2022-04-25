@@ -74,6 +74,8 @@ public:
     QLabel *label_14;
     QLabel *label_15;
     QLabel *label_16;
+    QLabel *label_comm;
+    QPushButton *B_comm_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -82,6 +84,8 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(1389, 691);
+        MainWindow->setToolButtonStyle(Qt::ToolButtonIconOnly);
+        MainWindow->setAnimated(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         label = new QLabel(centralwidget);
@@ -246,7 +250,7 @@ public:
         text_comm->setOverwriteMode(false);
         B_comm = new QPushButton(centralwidget);
         B_comm->setObjectName(QString::fromUtf8("B_comm"));
-        B_comm->setGeometry(QRect(600, 90, 91, 31));
+        B_comm->setGeometry(QRect(550, 90, 91, 31));
         label_2 = new QLabel(centralwidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(640, 380, 55, 31));
@@ -271,6 +275,15 @@ public:
         label_16->setObjectName(QString::fromUtf8("label_16"));
         label_16->setGeometry(QRect(200, 140, 55, 31));
         label_16->setFont(font2);
+        label_comm = new QLabel(centralwidget);
+        label_comm->setObjectName(QString::fromUtf8("label_comm"));
+        label_comm->setGeometry(QRect(720, 50, 141, 21));
+        QFont font3;
+        font3.setPointSize(10);
+        label_comm->setFont(font3);
+        B_comm_2 = new QPushButton(centralwidget);
+        B_comm_2->setObjectName(QString::fromUtf8("B_comm_2"));
+        B_comm_2->setGeometry(QRect(650, 90, 91, 31));
         MainWindow->setCentralWidget(centralwidget);
         img_lens1_2->raise();
         img_lens1->raise();
@@ -321,6 +334,8 @@ public:
         label_14->raise();
         label_15->raise();
         label_16->raise();
+        label_comm->raise();
+        B_comm_2->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 1389, 26));
@@ -386,13 +401,15 @@ public:
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", nullptr));
         text_comm->setPlaceholderText(QApplication::translate("MainWindow", "COM0", nullptr));
-        B_comm->setText(QApplication::translate("MainWindow", "SET", nullptr));
+        B_comm->setText(QApplication::translate("MainWindow", "CONNECT", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "\302\265m", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "\302\265m", nullptr));
         label_12->setText(QApplication::translate("MainWindow", "\302\265m", nullptr));
         label_14->setText(QApplication::translate("MainWindow", "\302\265m", nullptr));
         label_15->setText(QApplication::translate("MainWindow", "\302\265m", nullptr));
         label_16->setText(QApplication::translate("MainWindow", "\302\265m", nullptr));
+        label_comm->setText(QApplication::translate("MainWindow", "Comm_state", nullptr));
+        B_comm_2->setText(QApplication::translate("MainWindow", "DISCONNECT", nullptr));
     } // retranslateUi
 
 };

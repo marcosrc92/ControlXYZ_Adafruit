@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
@@ -672,14 +678,14 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="B_comm">
     <property name="geometry">
      <rect>
-      <x>600</x>
+      <x>550</x>
       <y>90</y>
       <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>SET</string>
+     <string>CONNECT</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -790,6 +796,37 @@ p, li { white-space: pre-wrap; }
      <string>µm</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_comm">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>50</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Comm_state</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="B_comm_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>90</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DISCONNECT</string>
+    </property>
+   </widget>
    <zorder>img_lens1_2</zorder>
    <zorder>img_lens1</zorder>
    <zorder>label</zorder>
@@ -839,6 +876,8 @@ p, li { white-space: pre-wrap; }
    <zorder>label_14</zorder>
    <zorder>label_15</zorder>
    <zorder>label_16</zorder>
+   <zorder>label_comm</zorder>
+   <zorder>B_comm_2</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

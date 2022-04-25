@@ -13,6 +13,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->label_comm->setStyleSheet("color: red");
+    ui->label_comm->setText("Disconnected");
+
 }
 
 MainWindow::~MainWindow()
@@ -33,8 +36,29 @@ void MainWindow::on_B_comm_clicked()
     serial.setStopBits(QSerialPort::OneStop);
     serial.setFlowControl(QSerialPort::NoFlowControl);
     if(!serial.open(QIODevice::ReadWrite)){
-        QString text = "Can not open communication  port";
+        ui->label_comm->setStyleSheet("color: red");
+        ui->label_comm->setText("Disconnected");
+        QString text = "Can not open communication port";
         QMessageBox::information(this, "Error Message", text, QMessageBox::Ok);
+    }
+    else{
+        ui->label_comm->setStyleSheet("color: green");
+        ui->label_comm->setText("Connected");
+    }
+}
+
+void MainWindow::on_B_comm_2_clicked()
+{
+    serial.close();
+    if(serial.isOpen()){
+        QString text = "Can not close communication port";
+        QMessageBox::information(this, "Error Message", text, QMessageBox::Ok);
+        ui->label_comm->setStyleSheet("color: green");
+        ui->label_comm->setText("Connected");
+    }
+    else{
+        ui->label_comm->setStyleSheet("color: red");
+        ui->label_comm->setText("Disconnected");
     }
 }
 
@@ -423,4 +447,7 @@ void MainWindow::on_B_backZ2_clicked()
 
     serial.write(msg);
 }
+
+
+
 

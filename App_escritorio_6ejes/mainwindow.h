@@ -71,6 +71,9 @@ public slots:
 
     void on_B_backZ2_clicked();
 
+private slots:
+    void on_B_comm_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
