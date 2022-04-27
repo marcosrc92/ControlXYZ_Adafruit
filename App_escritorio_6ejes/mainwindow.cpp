@@ -1,10 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#define TAMMSG 6
+
 QString comm_port,X1_Qval, X2_Qval, Y1_Qval, Y2_Qval, Z1_Qval, Z2_Qval;
 QSerialPort serial;
 
-char msg[6];
+char msg[TAMMSG];
 char byte_alto_avance, byte_bajo_avance;
 long int X1_val, X2_val, Y1_val, Y2_val, Z1_val, Z2_val;
 
@@ -73,7 +75,7 @@ void MainWindow::on_B_stepforwX1_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -85,7 +87,7 @@ void MainWindow::on_B_stepbackX1_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -106,7 +108,7 @@ void MainWindow::on_B_forwX1_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    int a = serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -125,7 +127,7 @@ void MainWindow::on_B_backX1_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -139,7 +141,7 @@ void MainWindow::on_B_stepforwY1_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -151,7 +153,7 @@ void MainWindow::on_B_stepbackY1_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -170,7 +172,7 @@ void MainWindow::on_B_forwY1_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -189,7 +191,7 @@ void MainWindow::on_B_backY1_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -203,7 +205,7 @@ void MainWindow::on_B_stepforwZ1_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -215,7 +217,7 @@ void MainWindow::on_B_stepbackZ1_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -234,7 +236,7 @@ void MainWindow::on_B_forwZ1_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -253,7 +255,7 @@ void MainWindow::on_B_backZ1_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -267,7 +269,7 @@ void MainWindow::on_B_stepforwX2_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -279,7 +281,7 @@ void MainWindow::on_B_stepbackX2_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -298,7 +300,7 @@ void MainWindow::on_B_forwX2_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -317,7 +319,7 @@ void MainWindow::on_B_backX2_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -331,7 +333,7 @@ void MainWindow::on_B_stepforwY2_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -343,7 +345,7 @@ void MainWindow::on_B_stepbackY2_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -362,7 +364,7 @@ void MainWindow::on_B_forwY2_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -381,7 +383,7 @@ void MainWindow::on_B_backY2_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -395,7 +397,7 @@ void MainWindow::on_B_stepforwZ2_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -407,7 +409,7 @@ void MainWindow::on_B_stepbackZ2_clicked()
     msg[3] = 0x04;                  //microsteping
     msg[4] = 0x00;  msg[5] = 0x01;  //1 step
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -426,7 +428,7 @@ void MainWindow::on_B_forwZ2_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
@@ -445,7 +447,7 @@ void MainWindow::on_B_backZ2_clicked()
     msg[4] = byte_alto_avance;
     msg[5] = byte_bajo_avance;
 
-    serial.write(msg);
+    serial.write(msg,TAMMSG);
 }
 
 
