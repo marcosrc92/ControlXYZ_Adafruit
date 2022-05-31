@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 
 void conv_movimiento_a_byte(long int avance, char* byte_alto_avance, char* byte_bajo_avance){
 
-    long int pulsos = 27648*avance/D_motriz_um;
+    long int pulsos = 2.048*avance*2;
 
     *byte_alto_avance = pulsos/256;
     *byte_bajo_avance = pulsos%256;
