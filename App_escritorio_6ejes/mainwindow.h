@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QSerialPort>
 #include <QMessageBox>
+#include <QShortcut>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -71,11 +72,39 @@ public slots:
 
     void on_B_backZ2_clicked();
 
-private slots:
     void on_B_comm_2_clicked();
+
+private slots:
+    void slotShortcutW();
+    void slotShortcutA();
+    void slotShortcutS();
+    void slotShortcutD();
+    void slotShortcutShiftW();
+    void slotShortcutShiftS();
+
+    void slotShortcutUp();
+    void slotShortcutDown();
+    void slotShortcutLeft();
+    void slotShortcutRight();
+    void slotShortcutShiftUp();
+    void slotShortcutShiftDown();
 
 private:
     Ui::MainWindow *ui;
+
+    QShortcut       *keyW;
+    QShortcut       *keyA;
+    QShortcut       *keyS;
+    QShortcut       *keyD;
+    QShortcut       *keyShiftW;
+    QShortcut       *keyShiftS;
+
+    QShortcut       *keyUp;
+    QShortcut       *keyDown;
+    QShortcut       *keyLeft;
+    QShortcut       *keyRight;
+    QShortcut       *keyShiftUp;
+    QShortcut       *keyShiftDown;
 };
 #endif // MAINWINDOW_H
 
