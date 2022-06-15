@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Imagenes/8305_RBL13D_SGL.jpg</file>
+        <file>Imagenes/isoaxis.jpg</file>
+        <file>Imagenes/keyA.jpg</file>
+        <file>Imagenes/keyD.jpg</file>
+        <file>Imagenes/keyDown.jpg</file>
+        <file>Imagenes/keyLeft.jpg</file>
+        <file>Imagenes/keyRight.jpg</file>
+        <file>Imagenes/keyS.jpg</file>
+        <file>Imagenes/keyShift.jpg</file>
+        <file>Imagenes/keyUp.jpg</file>
+        <file>Imagenes/keyW.jpg</file>
+    </qresource>
+</RCC>

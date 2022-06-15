@@ -120,7 +120,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>../8305_RBL13D_SGL.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/8305_RBL13D_SGL.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -457,7 +457,7 @@
      </rect>
     </property>
     <property name="pixmap">
-     <pixmap>../8305_RBL13D_SGL.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/8305_RBL13D_SGL.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -840,7 +840,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../isoaxis.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/isoaxis.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -859,7 +859,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../isoaxis.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/isoaxis.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -878,7 +878,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyD.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyD.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -897,7 +897,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyA.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyA.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -916,7 +916,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyS.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyS.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -935,7 +935,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyW.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyW.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -954,7 +954,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyShift.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyShift.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -973,7 +973,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyS.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyS.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -992,7 +992,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyShift.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyShift.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1011,7 +1011,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyW.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyW.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1030,7 +1030,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyDown.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyDown.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1049,7 +1049,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyLeft.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyLeft.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1068,7 +1068,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyRight.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyRight.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1087,7 +1087,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyUp.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyUp.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1106,7 +1106,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyShift.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyShift.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1125,7 +1125,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyShift.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyShift.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1144,7 +1144,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyUp.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyUp.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1163,7 +1163,7 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../keyDown.jpg</pixmap>
+     <pixmap resource="Imgs.qrc">:/new/prefix1/Imagenes/keyDown.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1251,6 +1251,8 @@ p, li { white-space: pre-wrap; }
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="Imgs.qrc"/>
+ </resources>
  <connections/>
 </ui>
